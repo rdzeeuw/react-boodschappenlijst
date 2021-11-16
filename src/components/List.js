@@ -1,21 +1,19 @@
-
 import ListItem from "./ListItem"
+import '../css/list.css'
 
-function List(props) {
-   
-    const groceryList = props.groceryItems.map(item => {
-        return <ListItem key={item.id} item={item} />
+function List({items, handleClickGroceryItem}) {
+
+    const listItems = items.map(item => {
+        return <ListItem 
+                    key={item.id} 
+                    item={item} 
+                    handleClickGroceryItem={handleClickGroceryItem}
+                    />
     })
-
-    const shoppingCart = props.shoppingCartItems.map(item => {
-        return <ListItem key={item.id} item={item} />
-    })
-
-
 
     return (
         <div>
-            { props.name === "grocery" ? <ul> { groceryList } </ul> : { shoppingCart } }
+           <ul> { listItems } </ul>
         </div>
     )
 }

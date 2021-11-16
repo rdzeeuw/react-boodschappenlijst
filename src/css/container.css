@@ -1,0 +1,15 @@
+.container {
+    width: 90vw;
+    max-width: 50rem;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    padding: 1em 1.5em;
+    margin-block: 3em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}

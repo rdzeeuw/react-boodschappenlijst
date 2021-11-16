@@ -1,0 +1,15 @@
+.app {
+    margin: 0;
+    background-color: hsl(300, 89%, 12%);
+    padding: 0 1.5rem;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-transform: uppercase;
+}

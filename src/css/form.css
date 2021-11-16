@@ -1,0 +1,21 @@
+
+input {
+    padding: .5em 1.5em;
+    outline: none;
+}
+
+.add-btn {
+    background-color: rgba(198, 247, 152, .9);
+    border: none;
+    border-radius: 5px;
+    padding: .5em 1em;
+    color: rgb(85, 10, 85);
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .1s ease-in;
+}
+
+.add-btn:hover {
+    transform: scale(1.025);
+    background-color: rgba(198, 247, 152, 1);
+}

@@ -1,0 +1,22 @@
+.list-item {
+    width: 90%;
+    min-width: 150px;
+    border: 2px solid white;
+    padding: .5em .75em;
+    margin-top: .2em;
+    
+}
+
+.list-item:hover {
+    border: 2px solid rgb(198, 247, 152);
+    cursor: pointer;
+    
+}
+
+
+.list-item:nth-child(odd) {
+    background: rgb(59, 43, 97);
+}
+.list-item:nth-child(even) {
+    background: rgb(114, 102, 143);
+}

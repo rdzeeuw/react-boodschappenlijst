@@ -1,0 +1,16 @@
+.list-section {
+    width: 100%;
+    outline: 2px solid white;
+    padding: .5em .5em;
+}
+
+.input-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    font-size: 2.5em;
+    text-align: center;
+}

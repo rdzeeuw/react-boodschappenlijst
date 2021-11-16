@@ -1,12 +1,16 @@
+import '../css/list-item.css'
 
-function ListItem(props) {
-    console.log(props)
+function ListItem({item, handleClickGroceryItem}) {
+
     return (
         <li 
             className="list-item"
-            key={props.item.id} 
-            value={props.item.title}>
-                {props.item.title}</li>
+            key={item.id} 
+            value={item.title}
+            id={item.id}
+            onClick={() => handleClickGroceryItem(item.id)}
+            >
+                {item.title}</li>
     )
        
 }

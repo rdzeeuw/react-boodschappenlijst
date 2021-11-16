@@ -1,15 +1,29 @@
+import { AiOutlineUnorderedList } from "react-icons/ai";
 import List from './List'
-import InputField from './InputField'
+import Form from './Form'
+import '../css/grocery-list.css';
 
-function GroceryList({ groceryItems }) {
+function GroceryList({ groceryItems, handleChange, handleSubmit, handleClickGroceryItem}) {
+
+    
 
     return (
-        <div className="grocery-list">
-            <InputField />
+        <div className="list-section">
+            <div className="subtitle">
+                <AiOutlineUnorderedList className="icon"/>
+                <h2>Boodschappenlijst</h2>
+            </div>
+                <Form 
+                    className="input-field"
+                    handleChange={handleChange}
+                    handleSubmit={handleSubmit}
+                    />
             <ul>
-                <List 
+                { groceryItems.length > 0 ? <List 
                     name="grocery" 
-                    groceryItems={ groceryItems } />
+                    items={ groceryItems } 
+                    handleClickGroceryItem={handleClickGroceryItem}
+                    /> : "Er staan nog geen boodschappen op het lijstje" }
             </ul>
         </div>
     )
